@@ -1,0 +1,51 @@
+.form {
+  margin-top: 0em;
+}
+
+.login {
+  background-color: #f0f0f0;
+  width: 40vw;
+  min-height: 20vh;
+  position: relative;
+  left: 30vw;
+  top: 20vw;
+  border-radius: 5px;
+}
+
+.loginPage {
+  background-color: #494949;
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.submit {
+  background-color: #4caf50;
+  padding: 5px;
+  float: right;
+}
+
+button {
+  border-radius: 3px;
+}
+
+.form-row {
+  padding: 5px;
+}
+
+.form-footer {
+  background-color: #e0e0e0;
+  min-height: 20px;
+  padding: 15px;
+  border-radius: 5px;
+}
+.form-header {
+  background-color: #e0e0e0;
+  min-height: 20px;
+  padding: 1px 15px;
+  border-radius: 5px;
+}
