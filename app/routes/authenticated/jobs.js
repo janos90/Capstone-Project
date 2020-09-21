@@ -1,6 +1,6 @@
 import Route from '@ember/routing/route';
 
-export default class JobsRoute extends Route {
+export default class AuthenticatedJobsRoute extends Route {
   model() {
     return [
       {

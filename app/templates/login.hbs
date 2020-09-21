@@ -1,20 +1,25 @@
 <div class="loginPage">
-  <form class="login form">
+  <form class="login form" {{on "submit" this.authenticate}}>
     <header class="form-header">
       <h1>Login</h1>
     </header>
     <body>
       <div class="form-row">
-        <label for="login-username">Username</label>
-        <input id="login-username" type="text" />
+        <label for="identification">Login</label>
+        <input id='identification' placeholder="Enter Login" value={{this.identification}} {{on "change" this.updateIdentification}}>
       </div>
       <div class="form-row">
-        <label for="login-password">Password</label>
-        <input id="login-password" type="password" />
+        <label for="password">Password</label>
+        <input id='password' placeholder="Enter Password" value={{this.password}} {{on "change" this.updatePassword}}>
+
       </div>
     </body>
     <footer class="form-footer">
       <button class="submit" type="submit">Login</button>
     </footer>
+    {{#if this.errorMessage}}
+      <p>{{this.errorMessage}}</p>
+    {{/if}}
+
   </form>
 </div>
